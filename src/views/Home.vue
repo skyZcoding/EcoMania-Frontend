@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="pb-24 flex flex-col bg-[#ACE6F1] justify-center items-center px-4 md:px-24 md:pt-56 lg:pt-96 pt-48 pb-16">
+        <div class="pb-24 flex flex-col bg-[#ACE6F1] justify-center items-center px-4 md:px-24 md:pt-36 lg:pt-48 pt-48 pb-16">
             <div class="flex flex-col md:flex-row items-center">
                 <img src="../assets/icons/Monster5.svg" class="md:w-1/3 md:mr-10 w-1/2 mb-10" />
                 <p class="md:w-2/3 font-normal">
