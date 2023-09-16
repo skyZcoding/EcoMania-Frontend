@@ -3,7 +3,7 @@
         <div class="flex flex-col md:flex-row justify-between w-full items-center">
             <div class="flex flex-col justify-center mr-0 md:mr-8 md:items-start items-center">
                 <h1 class="text-[#EE6F2D] text-5xl md:text-start text-center">{{ Title }}</h1>
-                <button class="mt-12 hover:bg-[#b24800] h-fit w-64 py-2 rounded-md bg-[#EE6F2D] font-medium text-white" @click="test">
+                <button :disabled="!LoadedImage" class="mt-12 hover:bg-[#b24800] h-fit w-64 py-2 rounded-md bg-[#EE6F2D] font-medium text-white" @click="test">
                     <p v-if="!Started">Play the story</p>
                     <p v-else-if="Active">Stop the story</p>
                     <p v-else>Resume the story</p>
