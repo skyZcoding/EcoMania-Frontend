@@ -19,6 +19,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -30,8 +31,12 @@ export default {
     },
     methods: {
         test() {
-            var audio = new Audio('../audio/' + this.Id + '.mp3'); // path to file
-            audio.play();
+            const speech = window.speechSynthesis
+            const utterance = new SpeechSynthesisUtterance(this.Story)
+            // var voices = window.speechSynthesis.getVoices()
+            // const voice = (voices.filter(function (voice) { return voice.name == 'Google UK English Male'; }))[0]
+            // utterance.voice = voice
+            speech.speak(utterance)
         }
     }
 }
