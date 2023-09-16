@@ -23,12 +23,12 @@
                 <div class="h-1/2"></div>
             </div>
         </div>
-        <div class="mb-24 flex flex-row justify-center items-center px-4 md:px-24 md:mt-56 lg:mt-96 mt-48">
-            <p class="w-2/3 font-normal mr-10">
+        <div class="mb-24 flex flex-col md:flex-row justify-center items-center px-4 md:px-24 md:mt-56 lg:mt-96 mt-48">
+            <p class="md:w-2/3 font-normal md:mr-10">
                 The island has a bustling port: Driftwood Harbor. 
     Our story follows two siblings, Lily and Finn, who discover this magical island during a family vacation. Lily and Finn stumble upon the ancient secret of awakening the Scrapsters. They craft toys from discarded materials found on the beach and bring them to life using magical Coral Signs (QR codes), a rare and powerful substance unique to Revive Reef.
             </p>
-            <img src="../assets/icons/kids.svg" class="w-1/3" />
+            <img src="../assets/icons/kids.svg" class="md:w-1/3" />
         </div>
     </div>
 </template>
