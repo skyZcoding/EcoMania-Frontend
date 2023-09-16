@@ -5,7 +5,7 @@
             </QrcodeStream>
         </div>
 
-        <div v-if="active" class="h-screen w-full flex items-center justify-center">
+        <div v-if="active" class="h-full w-full flex items-center justify-center">
             <p>{{ rawValue }}</p>
         </div>
     </div>
