@@ -30,6 +30,15 @@
             </p>
             <img src="../assets/icons/kids.svg" class="md:w-1/3" />
         </div>
+
+        <div class="lg:h-[40rem] md:h-[30rem] h-[25rem] w-screen relative">
+            <img src="../assets/icons/Island.svg" class="h-auto w-screen absolute">
+            <div class="flex flex-col h-full">
+                <div class="h-1/2 "></div>
+                <div class="h-1/2 bg-[#ACE6F1]"></div>
+            </div>
+        </div>
+
     </div>
 </template>
 
