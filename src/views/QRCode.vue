@@ -11,7 +11,7 @@ import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader'
 export default {
     methods: {
         onDetect(detectedCodes) {
-            console.log("Testing detected")
+            console.log("Testing detected!")
             console.log(detectedCodes[0].rawValue)
         }
     },
