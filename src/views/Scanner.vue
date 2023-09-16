@@ -21,6 +21,7 @@ export default {
             console.log(detectedCodes[0].rawValue)
             this.rawValue = detectedCodes[0].rawValue
             this.active = true
+            this.$router.push("/monster/" + this.rawValue)
         }
     },
     data() {
