@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-white">
+    <nav class="bg-white shadow-sm">
         <div class="flex flex-wrap justify-between p-4 items-center">
             <router-link to="/">
                 <img src="../assets/logo.svg" class="h-10">

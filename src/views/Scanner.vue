@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div v-if="!active">
-            <QrcodeStream :paused="active" @detect="onDetect">
+        <div v-if="!active" class="h-full w-auto">
+            <QrcodeStream class="h-full" :paused="active" @detect="onDetect">
             </QrcodeStream>
         </div>
 
