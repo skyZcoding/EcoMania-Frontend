@@ -9,12 +9,12 @@
                 Create a Scrapster!
             </button>
             <p class="mt-24 text-center">In the enchanting world of Revive Reef, a mysterious island in the heart of the ocean, a magical transformation occurs. All the trash that washes ashore is not discarded but given a second chance at life. This island is a beacon of hope, where refuse is reborn as lovable and mischievous toy monsters known as</p>
-            <img class="mt-24" src="../assets/icons/scrapters.svg" alt="">
+            <img class="mt-24" src="../assets/icons/scrapster.svg" alt="">
             <div class="mt-24">
                 <div class="flex flex-row">
                     <img class="" src="../assets/icons/Monster1.svg" alt="">
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -22,6 +22,5 @@
 
 <script>
 
-export default {
-}
+
 </script>
