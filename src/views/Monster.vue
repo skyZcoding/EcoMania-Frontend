@@ -3,8 +3,10 @@
         <div class="flex flex-col md:flex-row justify-between w-full">
             <div class="flex flex-col justify-center mr-8 md:items-start items-center">
                 <h1 class="text-[#EE6F2D] text-5xl md:text-start text-center">{{ Title }}</h1>
-                <button class="mt-12 w-fit h-fit md:px-24 px-12 py-2 rounded-md bg-[#EE6F2D] font-medium text-white" @click="test">
-                    Play the story
+                <button class="mt-12 h-fit w-64 py-2 rounded-md bg-[#EE6F2D] font-medium text-white" @click="test">
+                    <p v-if="!Started">Play the story</p>
+                    <p v-else-if="Active">Stop the story</p>
+                    <p v-else>Resume the story</p>
                 </button>
             </div>
 
