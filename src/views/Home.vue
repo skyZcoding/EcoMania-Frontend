@@ -39,6 +39,31 @@
             </div>
         </div>
 
+        <div class="pb-24 flex flex-col bg-[#ACE6F1] justify-center items-center px-4 md:px-24 md:pt-56 lg:pt-96 pt-48 pb-48">
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="../assets/icons/Monster5.svg" class="md:w-1/3 md:mr-10" />
+                <p class="md:w-2/3 font-normal">
+                    As the Scrapsters come to life, they reveal their distinct personalities and abilities based on the materials they were made from. Together with their new friends, Lily and Finn embark on extraordinary adventures both above and below the ocean's surface. These adventures are driven by their mission to restore the health of the ocean, which has been suffering from pollution and neglect.
+                </p>
+            </div>
+            
+            <button class="mt-24 w-fit h-fit px-24 py-2 rounded-md bg-[#EE6F2D] font-medium text-white">
+                Create a Scrapster!
+            </button>
+        </div>
+
+        <div class="h-auto w-screen relative bg-[#ACE6F1]">
+            <img src="../assets/icons/levellast.svg" class="h-auto w-screen">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+                <div class="flex flex-col justify-center items-center">
+                    <p class="mb-24 font-medium text-white">
+                        The Scrapsters, with their unique talents, help tackle environmental challenges, clean up the ocean, and teach valuable lessons about the importance of recycling, upcycling, and protecting our planet. In this magical universe, the Scrapsters and their human friends prove that even the most overlooked and discarded things can be transformed into something beautiful, valuable, and full of life.
+                    </p>
+                    <img src="../assets/icons/Monster6.svg" class="mb-24" alt="">
+                    <img src="../assets/icons/scrapster.svg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
