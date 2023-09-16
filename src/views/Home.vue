@@ -71,8 +71,8 @@
                     <p class="mb-24 md:mb-0 font-medium text-white md:mt-40 lg:mt-64 mt-32 pl-4 pr-4">
                         The Scrapsters, with their unique talents, help tackle environmental challenges, clean up the ocean, and teach valuable lessons about the importance of recycling, upcycling, and protecting our planet. In this magical universe, the Scrapsters and their human friends prove that even the most overlooked and discarded things can be transformed into something beautiful, valuable, and full of life.
                     </p>
-                    <img src="../assets/icons/Monster6.svg" class="mb-24 mt-16 w-1/3" alt="">
-                    <div class="h-fit w-screen flex flex-col items-center px-4 md:px-24 pb-24">
+                    <img src="../assets/icons/Monster6.svg" class="mb-24 hidden md:block mt-16 w-1/3" alt="">
+                    <div class="h-fit w-screen hidden md:flex flex-col items-center px-4 md:px-24 pb-24">
                         <img src="../assets/icons/scrapster.svg" alt="Scrapsters" class="mt-8">
                     </div>
                 </div>
