@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         test() {
-            var audio = new Audio('../src/assets/audio/' + this.Id + '.mp3'); // path to file
+            var audio = new Audio('../public/audio/' + this.Id + '.mp3'); // path to file
             audio.play();
         }
     }
