@@ -33,9 +33,9 @@ export default {
         test() {
             const speech = window.speechSynthesis
             const utterance = new SpeechSynthesisUtterance(this.Story)
-            // var voices = window.speechSynthesis.getVoices()
-            // const voice = (voices.filter(function (voice) { return voice.name == 'Google UK English Male'; }))[0]
-            // utterance.voice = voice
+            var voices = window.speechSynthesis.getVoices()
+            const voice = (voices.filter(function (voice) { return voice.name == 'Google UK English Male'; }))[0]
+            utterance.voice = voice
             speech.speak(utterance)
         }
     }
