@@ -5,7 +5,7 @@
             <img src="../assets/icons/Revive-Reef.svg" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-8 md:h-12 lg:h-16" />
         </div>
         <div class="bg-[#A7E7D3] h-fit w-screen flex flex-col items-center px-4 md:px-24 pb-24">
-            <router-link to="/scanner" class="mt-24 w-fit h-fit px-24 py-2 rounded-md bg-[#EE6F2D] font-medium text-white">
+            <router-link to="/scanner" class="mt-24 hover:bg-[#b24800] text-center h-fit px-4 w-80 py-2 rounded-md bg-[#EE6F2D] font-medium text-white">
                 Scan your QR code now
             </router-link>
             <p class="mt-24 text-center font-normal">In the enchanting world of <b>Revive Reef</b>, a mysterious island in the heart of the ocean, a magical transformation occurs. All the trash that washes ashore is not discarded but given a second chance at life. This island is a beacon of hope, where refuse is reborn as lovable and mischievous toy monsters known as</p>
@@ -59,8 +59,8 @@
                 </p>
             </div>
             
-            <router-link to="/receipts" class="mt-24 w-fit h-fit px-24 py-2 rounded-md bg-[#EE6F2D] font-medium text-white">
-                Check out your receipts 
+            <router-link to="/receipts" class="mt-24 text-center h-fit px-4 w-80 py-2 rounded-md bg-[#EE6F2D] font-medium text-white">
+                Check out your receipts
             </router-link>
         </div>
 
