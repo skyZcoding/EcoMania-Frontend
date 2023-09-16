@@ -25,11 +25,15 @@ export default {
             receipts: [
                 {
                 date: '16. September',
-                price: 'CHF 45.40'
+                price: 'CHF ' + Math.floor(Math.random() * 100) + '.00'
                 },
                 {
                 date: '15. September',
-                price: 'CHF 20.00'
+                price: 'CHF ' + Math.floor(Math.random() * 100) + '.00'
+                },
+                {
+                date: '13. September',
+                price: 'CHF ' + Math.floor(Math.random() * 100) + '.00'
                 }
             ],
             popularProducts: []
