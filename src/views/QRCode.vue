@@ -1,7 +1,13 @@
 <template>
     <div>
-        <QrcodeStream @detect="onDetect">
-        </QrcodeStream>
+        <div v-if="!active">
+            <QrcodeStream :paused="active" @detect="onDetect">
+            </QrcodeStream>
+        </div>
+
+        <div v-if="active" class="h-screen w-full flex items-center justify-center">
+            <p>{{ rawValue }}</p>
+        </div>
     </div>
 </template>
 
@@ -13,10 +19,15 @@ export default {
         onDetect(detectedCodes) {
             console.log("Testing detected!")
             console.log(detectedCodes[0].rawValue)
+            this.rawValue = detectedCodes[0].rawValue
+            this.active = true
         }
     },
     data() {
-        
+        return {
+            active: false,
+            rawValue: ""
+        }
     },
     components: {
         QrcodeStream,
