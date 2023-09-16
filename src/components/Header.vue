@@ -5,6 +5,9 @@
                 <img src="../assets/logo.svg" class="h-10">
             </router-link>
             <div class="flex flex-row items-center">
+                    <router-link to="/receipts">
+                        <CartIcon class="text-slate-800 hover:text-[#EE6F2D] duration-200 h-10 mx-2" />
+                    </router-link>
                     <router-link to="/scanner">
                         <QRCodeIcon class="text-slate-800 hover:text-[#EE6F2D] duration-200 h-10 mx-2" />
                     </router-link>
@@ -15,10 +18,12 @@
 
 <script>
 import QRCodeIcon from "./icons/QRCode.vue"
+import CartIcon from "./icons/Cart.vue"
 
 export default {
     components: {
-        QRCodeIcon
+        QRCodeIcon,
+        CartIcon
     },
 }
 </script>
