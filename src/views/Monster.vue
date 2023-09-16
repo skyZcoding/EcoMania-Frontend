@@ -1,14 +1,14 @@
 <template>
     <div class="h-full w-full px-12 md:px-24 flex flex-col items-center justify-center md:pt-0 pt-12">
         <div class="flex flex-col md:flex-row justify-between w-full">
-            <div class="flex flex-col justify-center mr-8">
-                <h1 class="text-[#EE6F2D] text-5xl">{{ Title }}</h1>
+            <div class="flex flex-col justify-center mr-8 md:items-start items-center">
+                <h1 class="text-[#EE6F2D] text-5xl md:text-start text-center">{{ Title }}</h1>
                 <button class="mt-12 w-fit h-fit md:px-24 px-12 py-2 rounded-md bg-[#EE6F2D] font-medium text-white" @click="test">
                     Play the story
                 </button>
             </div>
 
-            <img src="../assets/tetrabreeze.jpeg" class="h-[18rem] w-fit" alt="">      
+            <img src="../assets/tetrabreeze.jpeg" class="h-[18rem] my-8 w-fit" alt="">      
         </div>
         <div class="w-fit">
             <p>
