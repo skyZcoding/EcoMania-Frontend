@@ -11,8 +11,20 @@
             <p class="mt-24 text-center font-normal">In the enchanting world of Revive Reef, a mysterious island in the heart of the ocean, a magical transformation occurs. All the trash that washes ashore is not discarded but given a second chance at life. This island is a beacon of hope, where refuse is reborn as lovable and mischievous toy monsters known as</p>
             <img class="mt-24" src="../assets/icons/scrapster.svg" alt="">
             <div class="mt-24">
-                <div class="flex flex-row">
-                    <img class="" src="../assets/icons/Monster1.svg" alt="">
+                <div class="flex flex-row carousel-row">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src="../assets/icons/Monster1.svg" alt="Monster 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/icons/Monster2.svg" alt="Monster 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/icons/Monster3.svg" alt="Monster 3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,3 +83,46 @@
 
 
 </script>
+
+<style>
+.carousel-row {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 33%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%;
+  animation: carousel 15s infinite;
+}
+
+.carousel-item {
+  width: 33.3333%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@keyframes carousel {
+  0%, 20% {
+    transform: translateX(0);
+  }
+
+  30%, 50% {
+    transform: translateX(-33.333%);
+  }
+
+  60%, 80% {
+    transform: translateX(-66.6666%);
+  }
+
+  90%, 100%{
+    transform: translateX(0);
+  }
+}
+</style>
