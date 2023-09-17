@@ -94,7 +94,7 @@ export default {
                 });
                 const json_raw = await response.json();
                 const data = JSON.parse(json_raw);
-                this.rating = data["score"];
+                this.rating = Math.round(data["score"] * 10) / 10;
                 this.signed = data["sustainable"];
             } catch (error) {
                 console.error(error);
