@@ -41,7 +41,7 @@ export default {
     },
     async mounted() {
         try {
-            const response = await fetch('https://ecomania-api.azurewebsites.net/get_popular_products');
+            const response = await fetch('https://ecomania-api.azurewebsites.net/get_demo_products');
             const products = await response.json();
             this.popularProducts = products;
         } catch (error) {
