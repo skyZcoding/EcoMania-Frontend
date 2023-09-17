@@ -20,13 +20,13 @@
         </div>
         <button class="text-sm text-blue-500 mt-auto" @click="togglePurchases">{{ showPurchases ? 'Hide' : 'Show' }} Purchases</button>
     </div>
-    <div v-if="showModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title">Add Popular Product</div>
-                <div class="modal-close" @click="showModal = false">&times;</div>
+    <div v-if="showModal" class="own-modal">
+        <div class="own-modal-content">
+            <div class="own-modal-header">
+                <div class="own-modal-title">Add Popular Product</div>
+                <div class="own-modal-close" @click="showModal = false">&times;</div>
             </div>
-            <div class="modal-body">
+            <div class="own-modal-body">
                 <ul>
                     <li v-for="product in popularProducts" :key="product.ID" v-if="!isProductInReceipt(product.Name)">
                         <button @click="addProductToReceipt(product.Name)">{{ product.Name }}</button>
@@ -115,7 +115,7 @@ export default {
             const product = this.popularProducts.find(product => product.Name === productName);
             this.receiptPurchases.push({ Name: product.Name, Cargo: product.Cargo, Id: product.ID });
 
-            // Close modal
+            // Close own-modal
             this.closeModal();
         }
     },
@@ -176,7 +176,7 @@ li {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25); /* Add a stronger box shadow */
 }
 /* Modal */
-.modal {
+.own-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -188,7 +188,7 @@ li {
   align-items: center;
 }
 
-.modal-content {
+.own-modal-content {
   background-color: white;
   padding: 1rem;
   border-radius: 0.25rem;
@@ -197,40 +197,40 @@ li {
   width: 100%;
 }
 
-.modal-header {
+.own-modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.modal-title {
+.own-modal-title {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-.modal-close {
+.own-modal-close {
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.modal-body {
+.own-modal-body {
   margin-bottom: 1rem;
 }
 
-.modal-body ul {
+.own-modal-body ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-height: 300px; /* Set the maximum height of the modal body */
+  max-height: 300px; /* Set the maximum height of the own-modal body */
   overflow-y: auto; /* Add a vertical scrollbar when the content overflows */
 }
 
-.modal-body li {
+.own-modal-body li {
   margin-bottom: 0.5rem;
 }
 
-.modal-body button {
+.own-modal-body button {
   background-color: #f7fafc; /* Set the background color to a lighter shade */
   color: #4a5568; /* Set the text color to a darker shade */
   padding: 0.5rem 1rem;
@@ -239,7 +239,7 @@ li {
   cursor: pointer;
 }
 
-.modal-body button:hover {
+.own-modal-body button:hover {
   background-color: #edf2f7; /* Set the hover background color to a lighter shade */
   border-color: #a0aec0; /* Set the hover border color to a darker shade */
 }
