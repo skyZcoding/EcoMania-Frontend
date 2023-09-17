@@ -11,16 +11,16 @@
             <p class="mt-24 text-center font-normal">In the enchanting world of <b>Revive Reef</b>, a mysterious island in the heart of the ocean, a magical transformation occurs. All the trash that washes ashore is not discarded but given a second chance at life. This island is a beacon of hope, where refuse is reborn as lovable and mischievous toy monsters known as</p>
             <img class="mt-24" src="../assets/icons/scrapster.svg" alt="">
             <div class="mt-24">
-                <div class="flex flex-row carousel-row">
-                    <div class="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
+                <div class="flex flex-row own-carousel-row">
+                    <div class="own-carousel">
+                        <div class="own-carousel-inner">
+                            <div class="own-carousel-item">
                                 <img src="../assets/icons/Monster1.svg" alt="Monster 1">
                             </div>
-                            <div class="carousel-item">
+                            <div class="own-carousel-item">
                                 <img src="../assets/icons/Monster2.svg" alt="Monster 2">
                             </div>
-                            <div class="carousel-item">
+                            <div class="own-carousel-item">
                                 <img src="../assets/icons/Monster3.svg" alt="Monster 3">
                             </div>
                         </div>
@@ -87,30 +87,30 @@
 </script>
 
 <style>
-.carousel-row {
+.own-carousel-row {
   display: flex;
   justify-content: center;
 }
 
-.carousel {
+.own-carousel {
   width: 33%;
   overflow: hidden;
 }
 
-.carousel-inner {
+.own-carousel-inner {
   display: flex;
   width: 300%;
-  animation: carousel 15s infinite;
+  animation: own-carousel 15s infinite;
 }
 
-.carousel-item {
+.own-carousel-item {
   width: 33.3333%;
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 
-@keyframes carousel {
+@keyframes own-carousel {
   0%, 20% {
     transform: translateX(0);
   }
