@@ -1,6 +1,7 @@
 <template>
     <div class="h-full w-full px-12 md:px-24 flex flex-col items-center justify-center md:pt-0 pt-12">
-        <div class="flex flex-col md:flex-row justify-between w-full items-center">
+        <span v-if="!LoadedImage" class="h-96 loading loading-dots loading-lg"></span>
+        <div v-if="LoadedImage" class="flex flex-col md:flex-row justify-between w-full items-center">
             <div class="flex flex-col justify-center mr-0 md:mr-8 md:items-start items-center">
                 <h1 class="text-[#EE6F2D] text-5xl md:text-start text-center">{{ Title }}</h1>
                 <button :disabled="!LoadedImage" class="mt-12 hover:bg-[#b24800] h-fit w-64 py-2 rounded-md bg-[#EE6F2D] font-medium text-white" @click="test">
@@ -13,7 +14,7 @@
             <img v-if="LoadedImage" v-bind:src="ImageUrl" class="h-[18rem] my-8 w-fit " alt="">
             <img v-else src="../assets/tetrabreeze.jpeg" class="h-[18rem] my-8 w-fit " alt="">      
         </div>
-        <div class="w-fit">
+        <div v-if="LoadedImage" class="w-fit">
             <p>
                 {{ Story }}
             </p>
